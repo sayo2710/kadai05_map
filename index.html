@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="icon" href="./img/map.png">
+  <title>Map APP</title>
+</head>
+
+<body>
+  <header></header>
+
+  <main class="main">
+
+    <section class="input_area">
+      <!-- input -->
+      <div class="input_form">
+
+        <div>
+          <label class="date_area">
+            <div class="input_sub">日付</div>
+            <input type="date" class="date_text"></input>
+          </label>
+        </div>
+
+        <div>
+          <label class="place_area">
+            <div class="input_sub">場所</div>
+            <input type="text" class="place_text">
+            <p class="place_mic_text">&nbsp;</p>
+            <div>
+              <button class="place_mic_btn"></button>
+            </div>
+          </label>
+        </div>
+
+        <div>
+          <label class="comment_area">
+            <div class="input_sub">感想</div>
+            <input type="text" class="comment_text">
+            <p class="comment_mic_text">&nbsp;</p>
+            <div>
+              <button class="comment_mic_btn"></button>
+            </div>
+          </label>
+        </div>
+
+        <div>
+          <label class="comment_area">
+            <div class="input_sub">写真</div>
+            <input type="file" class="pic_file">
+          </label>
+        </div>
+
+      </div>
+
+      <!-- map -->
+      <div class="input_map"></div>
+
+      <!-- button -->
+      <div class="btn_area">
+        <button class="save" onclick="window.location.reload();">登録</button>
+        <button class="change" onclick="window.location.reload();">変更</button>
+        <button class="remove" onclick="window.location.reload();">削除</button>
+        <button class="clear" onclick="window.location.reload();">全削除</button>
+      </div>
+    </section>
+
+    <!-- output -->
+    <section class="output_area">
+
+      <!-- localStorage の登録件数を表示 -->
+      <label class="count_area">
+        <h1 class=count_area_title>登録件数：</h1>
+        <div class="count">件</div>
+      </label>
+
+      <!-- localStorage の登録内容を表示 -->
+      <div class="display_area"></div>
+
+       <!-- localStorage の登録mapを表示 -->
+       <div class="output_map"></div>
+    </section>
+
+  </main>
+
+  <footer></footer>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script
+    src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[]'
+    async defer></script>
+  <script src="./js/BmapQuery.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

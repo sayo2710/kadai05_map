@@ -1,0 +1,98 @@
+.main {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  color: #222;
+}
+
+/* input_area */
+.input_area {
+  width: 34%;
+  padding: 32px 10px;
+  border: 1px solid gray;
+  background-color: aliceblue;
+}
+
+.input_form {
+  padding: 15px;
+  border: 1px solid rgb(174, 128, 128);
+  background-color: white;
+}
+
+.input_sub {
+  margin-right: 10px;
+}
+
+.date_area,
+.place_area,
+.comment_area {
+  display: flex;
+  margin: 10px;
+}
+
+.date_text,
+.place_text,
+.comment_text {
+  width: 200px;
+}
+
+/* button_area */
+.btn_area {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+  line-height: 24px;
+}
+
+.mic_btn,
+.save,
+.change,
+.remove,
+.clear,
+.place_mic_btn,
+.comment_mic_btn {
+  margin: 0 8px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+
+.place_mic_btn,
+.comment_mic_btn {
+  padding: 17px;
+  background: url("../img/microphone.png") no-repeat;
+}
+
+.save:hover,
+.change:hover,
+.remove:hover,
+.clear:hover,
+.place_mic_btn:hover,
+.comment_mic_btn:hover {
+  background-color: orange;
+  font-weight: 600;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* map */
+.input_map,
+.output_map {
+  width: 100%;
+  min-width: 400px;
+  height: 400px;
+  margin: 16px auto 0;
+  border: 1px solid gray;
+}
+
+/* output_area */
+.output_area {
+  width: 66%;
+  padding: 32px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.display_area {
+  display: flex;
+}
